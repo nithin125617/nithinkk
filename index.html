@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quanta HealthCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Header and Navigation */
+    header {
+      background-color: #004d7a;
+      padding: 20px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #94d2bd;
+    }
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+    /* Services Section */
+    section.services {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #004d7a;
+      font-weight: 700;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #f1f9f8;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    .service-card h3 {
+      color: #007f7f;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .service-card p {
+      color: #555;
+      font-size: 1rem;
+    }
+    /* Contact Section */
+    section.contact {
+      background-color: #e6f2ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section.contact h2 {
+      font-size: 2.5rem;
+      color: #004d7a;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+    section.contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: #333;
+    }
+    /* Footer */
+    footer {
+      background-color: #002b47;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      nav ul {
+        gap: 15px;
+      }
+      section.services {
+        padding: 40px 0;
+      }
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Quanta HealthCare</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Health, Our Priority</h1>
+      <p>Providing world-class healthcare services with compassion and expertise.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid container">
+      <div class="service-card">
+        <h3>General Health Checkups</h3>
+        <p>Comprehensive health assessments to keep you healthy and informed.</p>
+      </div>
+      <div class="service-card">
+        <h3>Emergency Care</h3>
+        <p>24/7 immediate care for urgent medical needs with expert staff.</p>
+      </div>
+      <div class="service-card">
+        <h3>Telemedicine</h3>
+        <p>Access healthcare professionals remotely via secure video consultations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Pediatric Care</h3>
+        <p>Specialized health services dedicated to the well-being of children.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@quantahealth.com</p>
+    <p>Phone: +1 (800) 123-4567</p>
+    <p>Address: 456 Wellness Blvd, Health City</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quanta HealthCare. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
